@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="__PUBLIC__/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/announce.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/friend.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/Index_index.css">
+    <style type="text/css">
+        body{
+            background: rgba(255,232,0,0.2);
+        } 
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default" style="background:#DFF0D8;" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand " href="{:U('Index/index','','')}">文华学院校友录</a>
+        <div class="callboard">
+            <ul>
+                <volist name="Announce" id="Announces">
+                    <li>
+                        <i class="glyphicon glyphicon-volume-up"></i>
+                        {$Announces['message']}&nbsp;&nbsp;&nbsp;&nbsp;{$Announces['sendtime']|date="Y-m-d H:i:s",###}
+                    </li>
+                </volist>
+            </ul> 
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+    <ul class="nav nav-pills">
+        <li role="presentation" class="dropdown pull-right">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              {:session('name')} <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="{:U('Index/PasModify','','')}">修改密码</a></li>
+                <if condition="session('uid') eq 1">
+                    <li><a href="{:U('Index/index','','')}/type/manageAnnounce">公告设置</a></li>
+                    <li><a href="{:U('Index/index','','')}/type/manage">管理员设置</a></li>
+                </if>
+                <li><a href="{:U('Login/logout','','')}">退出</a></li>
+            </ul>
+        </li>
+        <li role="presentation" class="dropdown pull-right">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              设置 <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="{:U('Index/AlumiManage','','')}">校友录册子管理</a></li>
+                <li><a href="#">个人信息修改</a></li>
+                <li><a href="{:U('Index/friend','','')}">好友管理</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+<!--天气插件-->
+<iframe width="280" scrolling="no" height="25" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3"></iframe>
+<br/>
+<!--end-->
+
+
+<label>册子列表：</label>
+    <table class="table table-hover">
+        <tr>
+            <th>册子名称</th>
+            <th>册子简介</th>
+            <th>册子封面</th>
+            <th>操作</th>
+        </tr>
+        <volist name="AlumisInfo" id="AlumisInfoVo">
+            <tr>
+                <td>{$AlumisInfoVo.alumi_name}</td>
+                <td>{$AlumisInfoVo.alumi_intro}</td>
+                <td>3</td>
+                <td>
+                    <a href="#" class="edit-alumi_name">编辑</a>/
+                    <a href="#" class="delete">删除-alumi_name</a>
+                </td>
+            </tr>
+        </volist>
+    </table>
+
+    <script type="text/javascript">
+    </script>
+</body>
+</html>

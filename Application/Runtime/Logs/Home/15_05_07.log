@@ -1,0 +1,120 @@
+[ 2015-05-07T11:45:23+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T11:45:31+08:00 ] ::1 /bytp_/index.php/Index/addAlumni
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `al_announce` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_announce`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `al_table_lock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumis` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumi` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumi`  [ RunTime:0.0000s ]
+SQL: SELECT `alumi_id`,`alumi_covers`,`alumi_pwd` FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `al_zone` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0060s ]
+SQL: SELECT zone.id AS id,zone.fromid AS fromid,zone.content AS content,zone.sendtime AS sendtime,zone.like_ AS like_,user.username AS username,user.icon AS icon,user.id AS id FROM al_zone zone LEFT JOIN al_user user ON zone.fromid=user.id ORDER BY zone.sendtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_webinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_webinfo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`icon` FROM `al_user` WHERE ( id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_table_lock` WHERE ( table_name="al_alumis" )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( alumi_name="ceshi" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `alumi_name` FROM `al_alumis`  [ RunTime:0.0000s ]
+SQL: SELECT MAX(alumi_id) AS tp_max FROM `al_alumis` LIMIT 1   [ RunTime:0.0380s ]
+SQL: INSERT INTO `al_alumis` (`alumi_name`,`alumi_intro`,`alumi_covers`,`userid`,`alumi_id`) VALUES ('ceshi','','/bytp_/Public/images/7.png','1','7') [ RunTime:0.3090s ]
+NOTIC: [8] Use of undefined constant UID - assumed 'UID' D:\wamp\www\bytp_\Application\Home\Common\Userlog.class.php 第 12 行.
+
+[ 2015-05-07T11:45:34+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T13:14:06+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T13:14:37+08:00 ] ::1 /bytp_/index.php/Index/addAlumni
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `al_announce` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_announce`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `al_table_lock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_alumis` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumi` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumi`  [ RunTime:0.0010s ]
+SQL: SELECT `alumi_id`,`alumi_covers`,`alumi_pwd` FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_zone` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0050s ]
+SQL: SELECT zone.id AS id,zone.fromid AS fromid,zone.content AS content,zone.sendtime AS sendtime,zone.like_ AS like_,user.username AS username,user.icon AS icon,user.id AS id FROM al_zone zone LEFT JOIN al_user user ON zone.fromid=user.id ORDER BY zone.sendtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_webinfo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_webinfo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`icon` FROM `al_user` WHERE ( id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_table_lock` WHERE ( table_name="al_alumis" )  [ RunTime:0.0130s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( alumi_name="测试2" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `alumi_name` FROM `al_alumis`  [ RunTime:0.0000s ]
+SQL: SELECT MAX(alumi_id) AS tp_max FROM `al_alumis` LIMIT 1   [ RunTime:0.0190s ]
+SQL: INSERT INTO `al_alumis` (`alumi_name`,`alumi_intro`,`alumi_covers`,`userid`,`alumi_id`) VALUES ('测试2','','/bytp_/Public/images/7.png','1','8') [ RunTime:0.2070s ]
+NOTIC: [8] Use of undefined constant UID - assumed 'UID' D:\wamp\www\bytp_\Application\Home\Common\Userlog.class.php 第 12 行.
+
+[ 2015-05-07T13:14:39+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T13:14:41+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T13:15:45+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T15:42:37+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T15:53:34+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:00:45+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:02:27+08:00 ] ::1 /bytp_/index.php/Index/searchFriendAction
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `al_announce` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `al_announce`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `al_table_lock`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_alumis` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumi` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `al_alumi`  [ RunTime:0.0010s ]
+SQL: SELECT `alumi_id`,`alumi_covers`,`alumi_pwd` FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_zone` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0070s ]
+SQL: SELECT zone.id AS id,zone.fromid AS fromid,zone.content AS content,zone.sendtime AS sendtime,zone.like_ AS like_,user.username AS username,user.icon AS icon,user.id AS id FROM al_zone zone LEFT JOIN al_user user ON zone.fromid=user.id ORDER BY zone.sendtime desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_webinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `al_webinfo`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`icon` FROM `al_user` WHERE ( id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username`,`realname`,`icon` FROM `al_user` WHERE ( username="admin" and is_search=1 )  [ RunTime:0.0000s ]
+
+[ 2015-05-07T16:03:26+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:03:36+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:03:48+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:03:57+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-07T16:04:02+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+

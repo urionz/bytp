@@ -1,0 +1,47 @@
+[ 2015-05-21T16:01:59+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:02:45+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:17+08:00 ] ::1 /bytp_/index.php/Index/ModifyIcon
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `al_announce` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `al_announce`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `al_table_lock` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `al_table_lock`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumis` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_alumi` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `al_alumi`  [ RunTime:0.0010s ]
+SQL: SELECT `alumi_id`,`alumi_covers`,`alumi_pwd` FROM `al_alumis` WHERE ( userid=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_zone` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0100s ]
+SQL: SELECT zone.id AS id,zone.fromid AS fromid,zone.content AS content,zone.sendtime AS sendtime,zone.like_ AS like_,user.username AS username,user.icon AS icon,user.id AS id FROM al_zone zone LEFT JOIN al_user user ON zone.fromid=user.id ORDER BY zone.sendtime desc LIMIT 0,20   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_webinfo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `al_webinfo`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `al_user` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`icon` FROM `al_user` WHERE ( id=1 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `al_user` WHERE ( id=1 and icon="/bytp_/Uploads/usericon/5.jpg" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `al_user` SET `icon`='/bytp_/Uploads/usericon/5.jpg' WHERE ( id=1 ) [ RunTime:0.0230s ]
+
+[ 2015-05-21T16:03:19+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:24+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:26+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:28+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:30+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
+[ 2015-05-21T16:03:32+08:00 ] ::1 /bytp_/Public/js/announce.js
+ERR: 无法加载控制器:Public
+
